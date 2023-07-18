@@ -23,13 +23,11 @@ Route::get('/', function () {
 
 
 Route::get('/completeCallback', function (Request $request) {
-  
-    dd($request->all());
-})->name('completeCallback');;
+    echo('completeCallback');
+})->name('paysky.payment.completeCallback');;
 
 
 Route::get('/errorCallback', function (Request $request) {
-  
-    dd($request->all());
-})->name('errorCallback');
+    echo('errorCallback');
+})->name('paysky.payment.errorCallback');
 
